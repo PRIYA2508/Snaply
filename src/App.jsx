@@ -9,7 +9,7 @@ import { Home } from './MainComponents/root/pages/Home'
 
 function App() {
   return (
-    <main className='flex h-screen'>
+    <main className='flex h-screen p-0 m-0'>
     <BrowserRouter>
       <Routes>
       {/* Private Routes */}  

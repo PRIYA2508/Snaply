@@ -8,12 +8,12 @@ export function AuthLayout(){
             {isAuthenticated?
             (<Navigate to="/"/>):(
             <>
-            <section className="flex flex-col min-h-screen p-3 border w-screen">
-                <div className="flex w-1/2 justify-center items-center border h-screen border-amber-400">
+            <section className="flex min-h-screen w-screen m-0">
+                <div className="flex w-1/2 justify-center items-center ">
                     <Outlet/>
                 </div>
-                <div className="flex w-1/2 border border-blue-600 h-screen">
-
+                <div className=" hidden md:flex justify-center  h-screen w-1/2 p-0 m-0">
+                   <img src={img} className="h-screen w-full object-cover"/>
                 </div>
 
             </section>
