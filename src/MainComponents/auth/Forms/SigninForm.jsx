@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
 import { Button } from "../../../components/ui/button"
 export function SigninForm(){
-    
+     function handleSignIn(){
+        
+     }
     return(
         <div className="h-full w-full p-4 flex flex-col justify-center items-center gap-[20px] bg-gradient-to-t from-blue-900 via-25% to-black"> 
             <form className=" text-white flex flex-col w-[350px] p-2 " onSubmit={(e)=>e.preventDefault()}>

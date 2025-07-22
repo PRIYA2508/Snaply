@@ -13,7 +13,7 @@ export function AuthLayout(){
                     <Outlet/>
                 </div>
                 <div className=" hidden md:flex justify-center  h-screen w-1/2 p-0 m-0">
-                   <img src={img} className="h-screen w-full object-cover"/>
+                   <img src={img} className="h-screen w-full object-cover hidden md:block bg-no-repeat"/>
                 </div>
 
             </section>
