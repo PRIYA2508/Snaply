@@ -10,6 +10,8 @@ export function SignupForm(){
      if(!email || !password || !name || !username || !confirmPassword){
         alert("Please fill all the fields")
      }
+     else if(password !== confirmPassword){
+     }
     }
     return(
         <div>
