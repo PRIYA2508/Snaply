@@ -11,15 +11,16 @@ export function SignupForm(){
         alert("Please fill all the fields")
      }
      else if(password !== confirmPassword){
-     }
+        alert("Passwords do not match")
+     } 
     }
     return(
         <div>
-           <input type="text" placeholder="Your Name" />
-           <input type="text" placeholder="Enter Username" />
-           <input type="email" placeholder="Your Email" />
-           <input type="password" placeholder="Enter password"/>
-            <input type="password" placeholder=""/>
+           <input type="text" placeholder="Your Name" onChange={(e)=>setName(e.target.value)}/>
+           <input type="text" placeholder="Enter Username" onChange={(e)=>setUsername(e.target.value)}/>
+           <input type="email" placeholder="Your Email" onChange={(e)=>setEmail(e.target.value)}/>
+           <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)}/>
+           <input type="password" placeholder="Confirm password" onChange={(e)=>setConfirmPassword(e.target.value)}/>
            <Button onClick={check}>Signup</Button>
         </div>
     )
