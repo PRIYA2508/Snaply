@@ -9,7 +9,7 @@ export function AuthLayout(){
             (<Navigate to="/"/>):(
             <>
             <section className="flex min-h-screen w-screen m-0">
-                <div className="flex w-1/2 justify-center items-center ">
+                <div className="flex md:w-1/2 justify-center items-center ">
                     <Outlet/>
                 </div>
                 <div className=" hidden md:flex justify-center  h-screen w-1/2 p-0 m-0">
